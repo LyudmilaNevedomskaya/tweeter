@@ -1,0 +1,74 @@
+#tweet-text {
+  border: 0;
+  background-color: #f4f1ec;
+  font-weight: 600;
+  color: #545149;
+}
+textarea {
+  width: 100%;
+}
+.count-and-submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 5px solid #545149;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+main button {
+  background-color: #4056A1;
+  color: #ffff;
+  font-family: 'Bungee';
+  padding: 10px 15px;
+}
+.counter {
+  color: #545149;
+  font-family: 'Bungee';
+}
+.counterRed {
+  color: red;
+}
+#tweet-container {
+  border: 5px solid #545149;
+  padding: 0 15px;
+  margin: 40px 0;
+}
+#tweet-container:hover {
+  box-shadow: 10px 10px  rgb(138, 141, 125);
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-header .fas {
+  color: gray;
+  font-size: 3em;
+  padding: 20px 15px;
+}
+.userID {
+  font-weight: 600;
+  color: #d5d6da;
+}
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 5px solid #545149;
+  padding: 20px 15px;
+}
+.post-footer .fas {
+  color: #4056A1;
+  font-size: 0.9em;
+}
+i.icon:hover {
+  color: #d5d6da;
+}
+.posted-date {
+  font-size: 1rem;
+}
+.post-article {
+  text-align: left;
+  font-weight: 600;
+  padding: 0 15px;
+}
