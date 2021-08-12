@@ -1,18 +1,28 @@
 #logo {
   font-family: 'Bungee', cursive;
   font-size: 1.5em;
- }
+}
+
 .nav-container {
   background-color: #4056A1;
   color: #ffff;
   height: 120px;
   padding: 0 1.5em;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
+
 .nav-container .fas {
   color: red;
+}
+
+.nav-btn {
+  background-color: #4056A1;
+  border: 0;
+  color: #ffff;
 }

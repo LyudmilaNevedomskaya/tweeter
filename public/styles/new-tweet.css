@@ -1,12 +1,32 @@
+*:focus {
+  outline: none;
+}
+
 #tweet-text {
   border: 0;
   background-color: #f4f1ec;
   font-weight: 600;
   color: #545149;
 }
+
 textarea {
   width: 100%;
 }
+
+.new-tweet {
+  display: none;
+}
+
+.error-message,
+.empty-error-message {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  border: 5px solid red;
+  color: red;
+}
+
 .count-and-submit {
   display: flex;
   flex-direction: row;
@@ -15,41 +35,61 @@ textarea {
   margin: 20px 0;
   padding-top: 20px;
 }
+
 main button {
   background-color: #4056A1;
   color: #ffff;
   font-family: 'Bungee';
   padding: 10px 15px;
 }
+
 .counter {
   color: #545149;
   font-family: 'Bungee';
 }
+
 .counterRed {
   color: red;
 }
-#tweet-container {
+
+.tweet-container {
   border: 5px solid #545149;
   padding: 0 15px;
   margin: 40px 0;
 }
-#tweet-container:hover {
-  box-shadow: 10px 10px  rgb(138, 141, 125);
+
+.tweet-container:hover {
+  box-shadow: 10px 10px rgb(138, 141, 125);
 }
+
 .post-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.user-name {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+img {
+  display: inline-block;
+  margin: 0 20px 0 15px;
+}
+
 .post-header .fas {
   color: gray;
   font-size: 3em;
   padding: 20px 15px;
 }
+
 .userID {
   font-weight: 600;
   color: #d5d6da;
 }
+
 .post-footer {
   display: flex;
   justify-content: space-between;
@@ -57,18 +97,65 @@ main button {
   border-top: 5px solid #545149;
   padding: 20px 15px;
 }
+
 .post-footer .fas {
   color: #4056A1;
   font-size: 0.9em;
 }
+
 i.icon:hover {
   color: #d5d6da;
 }
+
 .posted-date {
   font-size: 1rem;
 }
+
 .post-article {
   text-align: left;
   font-weight: 600;
   padding: 0 15px;
+}
+
+#upbutton {
+  padding: 0.7em;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: red;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+
+#upbutton i {
+  color: #ffff;
+  font-size: 2.5em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .body-header {
+    width: 30%;
+    float: left;
+    margin: 240px 0 0 40px;
+    padding: 0 40px;
+  }
+
+  .body-header h2 {
+    text-align: center;
+  }
+
+  .new-tweet h2 {
+    margin-top: 0;
+  }
+
+  #main-container {
+    width: 60%;
+    float: right;
+    margin-top: 240px;
+    padding: 0 40px;
+  }
 }
