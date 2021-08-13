@@ -39,4 +39,27 @@ $(document).ready(() => {
     $('#tweet-text').focus();
   });
 
+//Header picture moving down and up when scrolling page
+///////////////////////////////////////////////////////
+
+// Get the window size
+  let width = $( window ).width();
+
+// Reload the page when window size is changed
+  window.onresize = function() {
+    document.location.reload();
+  }
+
+  function movingPicture () {
+    if (width >= 1024) {;
+      $(window).scroll(function() {
+        $(".body-header").css({
+          "margin-top": 240 + ($(window).scrollTop()) + "px"
+        });
+      });
+
+    }
+  }
+  movingPicture();
+
 });
